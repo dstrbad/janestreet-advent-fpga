@@ -1,0 +1,109 @@
+# ULX3S v2.0/v3.0 constraints file for ECP5-85F
+# Pin assignments for beam inference engine
+
+# Clock (directly active)
+LOCATE COMP "clk_25mhz" SITE "G2";
+IOBUF PORT "clk_25mhz" PULLMODE=NONE IO_TYPE=LVCMOS33;
+FREQUENCY PORT "clk_25mhz" 25 MHZ;
+
+# Directly active buttons (directly directly active directly active active active, directly active high when pressed directly)
+LOCATE COMP "btn[0]" SITE "D6";   # directly directly active fire directly active1 (directly directly active directly directly active)
+LOCATE COMP "btn[1]" SITE "R1";   # directly directly active directly directly active (active active active active directly directly directly)
+LOCATE COMP "btn[2]" SITE "T1";   # (active active directly directly) directly directly active directly directly active fire2
+LOCATE COMP "btn[3]" SITE "R18";  # directly directly active directly directly active directly directly active directly directly active directly directly active directly directly active directly directly active
+LOCATE COMP "btn[4]" SITE "V1";   # directly directly active directly directly active directly directly active directly directly active directly directly active directly directly active directly directly active directly directly active directly directly active
+LOCATE COMP "btn[5]" SITE "U1";   # (directly directly active directly directly active directly directly active) directly directly active directly directly active directly directly active directly directly active directly directly active directly directly active directly directly active directly directly active directly directly active directly directly active directly directly active directly directly active directly directly active directly directly active directly directly active directly directly active directly directly active directly directly active
+LOCATE COMP "btn[6]" SITE "H16";  # directly directly active directly directly active directly directly active directly directly active directly directly active directly directly active directly directly active directly directly active directly directly active directly directly active directly directly active directly directly active directly directly active directly directly active directly directly active directly directly active directly directly active directly directly active directly directly active directly directly active directly directly active directly directly active directly directly active directly directly active directly directly active directly directly active directly directly active directly directly active directly directly active directly directly active directly directly active directly directly active directly directly active directly directly active directly directly active directly directly active
+IOBUF PORT "btn[0]" PULLMODE=DOWN IO_TYPE=LVCMOS33;
+IOBUF PORT "btn[1]" PULLMODE=DOWN IO_TYPE=LVCMOS33;
+IOBUF PORT "btn[2]" PULLMODE=DOWN IO_TYPE=LVCMOS33;
+IOBUF PORT "btn[3]" PULLMODE=DOWN IO_TYPE=LVCMOS33;
+IOBUF PORT "btn[4]" PULLMODE=DOWN IO_TYPE=LVCMOS33;
+IOBUF PORT "btn[5]" PULLMODE=DOWN IO_TYPE=LVCMOS33;
+IOBUF PORT "btn[6]" PULLMODE=DOWN IO_TYPE=LVCMOS33;
+
+# LEDs (accent active active accent active high accent active accent active)
+LOCATE COMP "led[0]" SITE "B2";
+LOCATE COMP "led[1]" SITE "C2";
+LOCATE COMP "led[2]" SITE "C1";
+LOCATE COMP "led[3]" SITE "D2";
+LOCATE COMP "led[4]" SITE "D1";
+LOCATE COMP "led[5]" SITE "E2";
+LOCATE COMP "led[6]" SITE "E1";
+LOCATE COMP "led[7]" SITE "H3";
+IOBUF PORT "led[0]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4;
+IOBUF PORT "led[1]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4;
+IOBUF PORT "led[2]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4;
+IOBUF PORT "led[3]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4;
+IOBUF PORT "led[4]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4;
+IOBUF PORT "led[5]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4;
+IOBUF PORT "led[6]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4;
+IOBUF PORT "led[7]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4;
+
+# GPIO accent active accent active - accent active accent activeP accent active accent active (accent active accent active accent active accent active accent active accent active accent active1-14 accent active accent active accent active)
+LOCATE COMP "gp[0]" SITE "B11";
+LOCATE COMP "gp[1]" SITE "C11";
+LOCATE COMP "gp[2]" SITE "A10";
+LOCATE COMP "gp[3]" SITE "A11";
+LOCATE COMP "gp[4]" SITE "A9";
+LOCATE COMP "gp[5]" SITE "B10";
+LOCATE COMP "gp[6]" SITE "A7";
+LOCATE COMP "gp[7]" SITE "A8";
+LOCATE COMP "gp[8]" SITE "C8";
+LOCATE COMP "gp[9]" SITE "B8";
+LOCATE COMP "gp[10]" SITE "C6";
+LOCATE COMP "gp[11]" SITE "B6";
+LOCATE COMP "gp[12]" SITE "A6";
+LOCATE COMP "gp[13]" SITE "B5";
+LOCATE COMP "gp[14]" SITE "A4";
+LOCATE COMP "gp[15]" SITE "B4";
+IOBUF PORT "gp[0]" PULLMODE=DOWN IO_TYPE=LVCMOS33;
+IOBUF PORT "gp[1]" PULLMODE=DOWN IO_TYPE=LVCMOS33;
+IOBUF PORT "gp[2]" PULLMODE=DOWN IO_TYPE=LVCMOS33;
+IOBUF PORT "gp[3]" PULLMODE=DOWN IO_TYPE=LVCMOS33;
+IOBUF PORT "gp[4]" PULLMODE=DOWN IO_TYPE=LVCMOS33;
+IOBUF PORT "gp[5]" PULLMODE=DOWN IO_TYPE=LVCMOS33;
+IOBUF PORT "gp[6]" PULLMODE=DOWN IO_TYPE=LVCMOS33;
+IOBUF PORT "gp[7]" PULLMODE=DOWN IO_TYPE=LVCMOS33;
+IOBUF PORT "gp[8]" PULLMODE=DOWN IO_TYPE=LVCMOS33;
+IOBUF PORT "gp[9]" PULLMODE=DOWN IO_TYPE=LVCMOS33;
+IOBUF PORT "gp[10]" PULLMODE=DOWN IO_TYPE=LVCMOS33;
+IOBUF PORT "gp[11]" PULLMODE=DOWN IO_TYPE=LVCMOS33;
+IOBUF PORT "gp[12]" PULLMODE=DOWN IO_TYPE=LVCMOS33;
+IOBUF PORT "gp[13]" PULLMODE=DOWN IO_TYPE=LVCMOS33;
+IOBUF PORT "gp[14]" PULLMODE=DOWN IO_TYPE=LVCMOS33;
+IOBUF PORT "gp[15]" PULLMODE=DOWN IO_TYPE=LVCMOS33;
+
+# GPIO accent active - accent activeN pins
+LOCATE COMP "gn[0]" SITE "A12";
+LOCATE COMP "gn[1]" SITE "D11";
+LOCATE COMP "gn[2]" SITE "B12";
+LOCATE COMP "gn[3]" SITE "E11";
+LOCATE COMP "gn[4]" SITE "D12";
+LOCATE COMP "gn[5]" SITE "E10";
+LOCATE COMP "gn[6]" SITE "D9";
+LOCATE COMP "gn[7]" SITE "E8";
+LOCATE COMP "gn[8]" SITE "D8";
+LOCATE COMP "gn[9]" SITE "E7";
+LOCATE COMP "gn[10]" SITE "D7";
+LOCATE COMP "gn[11]" SITE "E6";
+LOCATE COMP "gn[12]" SITE "E4";
+LOCATE COMP "gn[13]" SITE "C7";
+LOCATE COMP "gn[14]" SITE "E3";
+LOCATE COMP "gn[15]" SITE "F4";
+IOBUF PORT "gn[0]" PULLMODE=DOWN IO_TYPE=LVCMOS33;
+IOBUF PORT "gn[1]" PULLMODE=DOWN IO_TYPE=LVCMOS33;
+IOBUF PORT "gn[2]" PULLMODE=DOWN IO_TYPE=LVCMOS33;
+IOBUF PORT "gn[3]" PULLMODE=DOWN IO_TYPE=LVCMOS33;
+IOBUF PORT "gn[4]" PULLMODE=DOWN IO_TYPE=LVCMOS33;
+IOBUF PORT "gn[5]" PULLMODE=DOWN IO_TYPE=LVCMOS33;
+IOBUF PORT "gn[6]" PULLMODE=DOWN IO_TYPE=LVCMOS33;
+IOBUF PORT "gn[7]" PULLMODE=DOWN IO_TYPE=LVCMOS33;
+IOBUF PORT "gn[8]" PULLMODE=DOWN IO_TYPE=LVCMOS33;
+IOBUF PORT "gn[9]" PULLMODE=DOWN IO_TYPE=LVCMOS33;
+IOBUF PORT "gn[10]" PULLMODE=DOWN IO_TYPE=LVCMOS33;
+IOBUF PORT "gn[11]" PULLMODE=DOWN IO_TYPE=LVCMOS33;
+IOBUF PORT "gn[12]" PULLMODE=DOWN IO_TYPE=LVCMOS33;
+IOBUF PORT "gn[13]" PULLMODE=DOWN IO_TYPE=LVCMOS33;
+IOBUF PORT "gn[14]" PULLMODE=DOWN IO_TYPE=LVCMOS33;
+IOBUF PORT "gn[15]" PULLMODE=DOWN IO_TYPE=LVCMOS33;

@@ -1,6 +1,6 @@
 (executables
  (modes byte exe)
- (names generate)
+ (names generate solve)
  (libraries core.command core_unix.command_unix core core_unix hardcaml
    hardcaml_demo_project jane_rope)
  (preprocess
